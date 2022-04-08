@@ -1,13 +1,7 @@
 # Run
 
-## Build docker:
+## Build & Run
 
 ```yml
  docker-compose up --build
-```
-
-
-## Run app
-```yml
- docker-compose up
 ```
