@@ -44,10 +44,10 @@ const News = () => {
       <div className="medium-card">
         <div className="card-top">
           <span className="card-type">{item.type}</span>
-          <span className="card-time">
+          {/* <span className="card-time">
             <Image alt="time-ago" src={timeAgoIcon.src} />
             {item.time}
-          </span>
+          </span> */}
         </div>
         <Heading as="h3" content={item.title} />
         <div className="read-more-text-wrapper">
