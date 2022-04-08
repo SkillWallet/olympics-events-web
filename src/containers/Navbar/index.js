@@ -11,11 +11,11 @@ import ScrollSpyMenu from "common/components/ScrollSpyMenu";
 import Link from "next/link";
 import { LinkButton } from "common/components/Button";
 import HamburgMenu from "common/components/HamburgMenu";
-import { NavabarData } from "common/data";
+import { NavbarData } from "common/data";
 
 const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
-  const { logo, navItems, button } = NavabarData;
+  const { logo, navItems, button } = NavbarData;
 
   // Toggle drawer
   const toggleHandler = () => {

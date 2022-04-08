@@ -3,36 +3,12 @@
 /* ------------------------------------ */
 import LogoImageStick from "common/assets/image/header-logo.svg";
 
-const MENU_ITEMS = [
-  {
-    label: "About",
-    path: "#about_section",
-    offset: "70",
-  },
-  {
-    label: "Newsletter",
-    path: "#newsletter_section",
-    offset: "70",
-  },
-  {
-    label: "For DAOS",
-    path: "#daos_section",
-    offset: "70",
-  },
-  {
-    label: "For Members",
-    path: "#members_section",
-    offset: "70",
-  },
-];
+const MENU_ITEMS = [];
 
-export const NavabarData = {
+export const NavbarData = {
   logo: LogoImageStick,
   navItems: MENU_ITEMS,
-  button: {
-    link: "https://discord.com/invite/aXJFGgcvUk",
-    text: "COMMUNITY",
-  },
+  button: {},
 };
 
 /* ------------------------------------ */
@@ -103,7 +79,7 @@ import featureIcon10 from "common/assets/image/events/event-image-10.svg";
 import featureIcon11 from "common/assets/image/events/event-image-11.svg";
 import featureIcon12 from "common/assets/image/events/event-image-12.svg";
 
-export const FeaturesData = {
+export const EventsData = {
   title: "First 100 to join the Olympics Get a Limited Edition Community Card",
   items: [
     {
@@ -312,10 +288,8 @@ export const CalendarData = {
   ],
 };
 
-
-
 /* ------------------------------------ */
-// Other Events data section
+// News data section
 /* ------------------------------------ */
 import firstImage from "common/assets/image/news/first.svg";
 import thirdImage from "common/assets/image/news/third.svg";
@@ -326,7 +300,7 @@ export const NewsData = {
   title: "Event News",
   playIcon,
   timeAgoIcon,
-  items: [
+  items: [ // example data
     {
       id: 1,
       image: firstImage,
@@ -356,36 +330,6 @@ export const NewsData = {
       image: thirdImage,
       type: 'Youtube',
       title: 'Video Title to go here'
-    },
-    {
-      id: 1,
-      image: firstImage,
-      type: 'Tweet',
-      title: 'Some Tweet title',
-      text: `Lorem ipsum dolor sit amet, consectetuer 
-      adipiscing elit. Aenean commodo ligula eget 
-      dolor. Aenean massa. Cum sociis natoque 
-      penatibus et magnis dis parturient montes, 
-      nascetur ridiculus mus. Donec quam felis, 
-      ultricies nec, pellentesque eu, pretium quis, 
-      sem. Nulla consequat mas`,
-      time: '1h ago'
-    },
-    {
-      id: 3,
-      image: thirdImage,
-      type: 'Youtube',
-      title: 'Video Title to go here'
-    },
-    {
-      id: 2,
-      type: 'Medium Post',
-      title: 'Excepteur sint occaecat cupidatat non proident, sunt in',
-      text: `Excepteur sint occaecat cupidatat 
-      non proident, sunt in culpa qui 
-      officia deserunt`,
-      href: '/',
-      time: '1h ago'
     },
   ],
 };

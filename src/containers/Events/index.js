@@ -4,9 +4,9 @@ import Heading from "common/components/Heading";
 import NextImage from "common/components/NextImage";
 import SectionWrapper, { EventWrapper } from "./Events.style";
 
-import { FeaturesData } from "common/data";
+import { EventsData } from "common/data";
 import CardSlider from "common/components/CardSlider";
-const { title, items } = FeaturesData;
+const { title, items } = EventsData;
 
 const Events = () => {
   return (
