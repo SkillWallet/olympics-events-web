@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  skillwallet_landing_web: 
+    container_name: skillwallet_landing_web
+    environment:
+      - SERVER_HOST=skillwallet_landing_server
+    build: ./
+    env_file:
+      - .env
+
+  skillwallet_landing_server:
+    container_name: skillwallet_landing_server
+    build: ./server/  
+    env_file:
+      - .env
+
+  skillwallet_landing_nginx: 
+    container_name: skillwallet_landing_nginx
+    build: ./nginx
+    ports:
+      - 3001:80
+
+networks:
+  skillwallet_landing:
