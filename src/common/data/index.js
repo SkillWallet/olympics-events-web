@@ -20,8 +20,8 @@ export const BannerData = {
   image: springLogo,
   logo: LogoImageStick,
   title: "Identity Spring",
-  subtitle: "powered by SKillWallet",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu mi nibh. Phasellus fermentum diam eget est sagittis, vel commodo turpis congue. Etiam vel massa.",
+  subtitle: "SKillWallet-powered Events.",
+  text: "SkillWallet was designed to fuel a more meritocratic society, based on the Individuals, their Skills, and their participation in a Community. Join our Identity Spring, in a series of 15 events, with 400+k in rewards, going from regular Hackathons to Build-athons, and the first, fully decentralized Olympics of the free, non-governmental world.",
 };
 
 import cubeImage from "common/assets/image/cube.svg";
@@ -39,25 +39,25 @@ export const AboutData = {
         "Volunteers can support the Community, be Olympics ambassadors, or help out in organizing the event(s).",
       button: {
         text: "Apply",
-        link: "",
+        link: "https://skillwallet.typeform.com/meta-volunteer",
       },
     },
     {
       title: "Become a Chaperon",
       subtitle:
-        "Chaperons are support the Community, be Olympics ambassadors, or help out in organizing the event(s). ",
+        "Chaperons are able to mentors participants, build bridges to bring in people & value, and be Speakers during the event.",
       button: {
         text: "Apply",
-        link: "",
+        link: "https://skillwallet.typeform.com/meta-chaperon",
       },
     },
     {
       title: "Become a Co-Host ",
       subtitle:
-        "Volunteers can support the Community, be Olympics ambassadors, or help out in organizing the event(s).",
+        "Partners can co-host a competition, sponsor side-events, or join us as DAO partner, to add value & expertise from their Community.",
       button: {
         text: "Apply",
-        link: "",
+        link: "https://skillwallet.typeform.com/meta-partner",
       },
     },
   ],
@@ -188,11 +188,11 @@ export const OtherEventsData = {
       topIcon: hacksIcon,
       mainIcon: hacksMainIcon,
       bottomIcon: ethGlobalIcon,
-      title: "Hacks",
-      subtitle: "Lorem ipsum dolor sit",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu mi nibh. Phasellus fermentum diam eget est sagittis, vel commodo turpis congue. Etiam vel massa.`,
+      title: "08-10/04/22",
+      subtitle: "SkillWallet @ DAOHacks",
+      description: `Join us at DAOHacks for the opportunity to explore new technologies, win incredible prizes,and hack for Public Goods & Personal Freedom.`,
       button: {
-        link: "",
+        link: "https://dao.ethglobal.com/",
         text: "Find Out More",
       },
     },
@@ -201,11 +201,11 @@ export const OtherEventsData = {
       topIcon: ethIcon,
       mainIcon: ethMainIcon,
       bottomIcon: ethGlobalIcon,
-      title: "Hacks",
-      subtitle: "Lorem ipsum dolor sit",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu mi nibh. Phasellus fermentum diam eget est sagittis, vel commodo turpis congue. Etiam vel massa.`,
+      title: "22-24/04/22",
+      subtitle: "SkillWallet @ ETHAmsterdam",
+      description: `Join us at ETHAmsterdam for the opportunity to explore new technologies, win incredible prizes,and hack for Public Goods & Personal Freedom.* Meet us in Amsterdam at our booth to join our side-events!`,
       button: {
-        link: "",
+        link: "https://amsterdam.ethglobal.com/",
         text: "Find Out More",
       },
     },
@@ -214,11 +214,11 @@ export const OtherEventsData = {
       topIcon: spaghettIcon,
       mainIcon: spaghettMainIcon,
       bottomIcon: ethGlobalIcon,
-      title: "Hacks",
-      subtitle: "Lorem ipsum dolor sit",
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu mi nibh. Phasellus fermentum diam eget est sagittis, vel commodo turpis congue. Etiam vel massa.`,
+      title: "03-05/05/22",
+      subtitle: "SkillWallet @ SpaghettETH",
+      description: `Join us at ETHAmsterdam for the opportunity to explore new technologies, win incredible prizes,and hack for Public Goods & Personal Freedom.* Meet us in Milan at our booth to join our side-events!`,
       button: {
-        link: "",
+        link: "http://spaghett-eth.com/",
         text: "Find Out More",
       },
     },

@@ -12,7 +12,7 @@ const Main = () => {
     <MainWrapper>
       <Banner />
       <About />
-      <Events />
+      {/* <Events /> */}
       <OtherEvents />
       <Calendar />
       <News />
