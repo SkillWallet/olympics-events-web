@@ -47,10 +47,8 @@ const About = () => {
                     <Heading as="h2" content={title} />
                     <Text as="p" color="white" content={subtitle} />
                   </div>
-                  <div>
-                    <Link href={button.link}>
-                      <LinkButton className="light" title={button.text} />
-                    </Link>
+                  <div onClick={(e) => e.stopPropagation()}>
+                    <LinkButton target="_blank" href={button.link} className="light" title={button.text} />
                   </div>
                 </div>
               </SwiperSlide>

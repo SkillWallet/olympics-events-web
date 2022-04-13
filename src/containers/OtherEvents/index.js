@@ -43,7 +43,15 @@ const OtherEvents = () => {
         >
           {items.map(
             (
-              { title, subtitle, button, topIcon, description, mainIcon, bottomIcon },
+              {
+                title,
+                subtitle,
+                button,
+                topIcon,
+                description,
+                mainIcon,
+                bottomIcon,
+              },
               index
             ) => {
               return (
@@ -58,9 +66,14 @@ const OtherEvents = () => {
                       <Heading as="h2" content={title} />
                       <Heading as="h3" content={subtitle} />
                       <Text as="p" content={description} />
-                      <Link href={button.link}>
-                        <LinkButton className="dark" title={button.text} />
-                      </Link>
+                      <div onClick={(e) => e.stopPropagation()}>
+                        <LinkButton
+                          target="_blank"
+                          href={button.link}
+                          className="light"
+                          title={button.text}
+                        />
+                      </div>
                       <Image
                         className="bottom-icon"
                         alt="spring-logo"
