@@ -20,7 +20,7 @@ export const BannerData = {
   image: springLogo,
   logo: LogoImageStick,
   title: "Identity Spring",
-  subtitle: "SKillWallet-powered Events.",
+  subtitle: "SkillWallet-powered Events.",
   text: "SkillWallet was designed to fuel a more meritocratic society, based on the Individuals, their Skills, and their participation in a Community. Join our Identity Spring, in a series of 15 events, with 400+k in rewards, going from regular Hackathons to Build-athons, and the first, fully decentralized Olympics of the free, non-governmental world.",
 };
 
@@ -30,7 +30,7 @@ export const AboutData = {
   image: aboutBg,
   cubeImage: cubeImage,
   title: "Meta Olympics",
-  subtitle: "powered by SKillWallet",
+  subtitle: "powered by SkillWallet",
   text: "12 Competitions, 12 Skills, 300k USDC in reward. The biggest Coordination Game of all time: a celebration of Freedom, Talent & Individuality - to create the IdentityVerse together!",
   items: [
     {
@@ -173,6 +173,7 @@ export const EventsData = {
 // Other Events data section
 /* ------------------------------------ */
 import ethGlobalIcon from "common/assets/image/other-events/eth-global.svg";
+import spaghettSponson from "common/assets/image/other-events/spaghett-sponsor.svg";
 import ethMainIcon from "common/assets/image/other-events/eth-main.svg";
 import ethIcon from "common/assets/image/other-events/eth.svg";
 import hacksIcon from "common/assets/image/other-events/hacks.svg";
@@ -213,7 +214,7 @@ export const OtherEventsData = {
       id: 3,
       topIcon: spaghettIcon,
       mainIcon: spaghettMainIcon,
-      bottomIcon: ethGlobalIcon,
+      bottomIcon: spaghettSponson,
       title: "03-05/05/22",
       subtitle: "SkillWallet @ SpaghettETH",
       description: `Join us at ETHAmsterdam for the opportunity to explore new technologies, win incredible prizes,and hack for Public Goods & Personal Freedom.* Meet us in Milan at our booth to join our side-events!`,

@@ -31,22 +31,7 @@ export const fetchVideos = async () => {
 
 export const fetchMediumPosts = async () => {
   try {
-    return await axios
-      .get(
-        "https://api.rss2json.com/v1/api.json?rss_url=https://blog.skillwallet.id/feed"
-      )
-      .then((res) => {
-        return res.data.items.map((v) => {
-          return {
-            type: "Medium Post",
-            title: v.title,
-            text: v.description.replace(/<img[^>]*>/g, "").replace(v.title, ""),
-            created_at: v.pubDate,
-            image: v.thumbnail,
-            href: v.link,
-          };
-        });
-      });
+    return await axios.get("/api/medium-posts").then((res) => res.data);
   } catch (error) {
     return [];
   }

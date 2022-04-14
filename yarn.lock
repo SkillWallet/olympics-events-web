@@ -673,6 +673,13 @@
   "resolved" "https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz"
   "version" "1.0.5"
 
+"axios@^0.21.1":
+  "integrity" "sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.21.4.tgz"
+  "version" "0.21.4"
+  dependencies:
+    "follow-redirects" "^1.14.0"
+
 "axios@^0.26.1":
   "integrity" "sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA=="
   "resolved" "https://registry.npmjs.org/axios/-/axios-0.26.1.tgz"
@@ -1573,6 +1580,13 @@
   "resolved" "https://registry.npmjs.org/fast-memoize/-/fast-memoize-2.5.2.tgz"
   "version" "2.5.2"
 
+"fast-xml-parser@^3.19.0":
+  "integrity" "sha512-FTFVjYoBOZTJekiUsawGsSYV9QL0A+zDYCRj7y34IO6Jg+2IMYEtQa+bbictpdpV8dHxXywqU7C0gRDEOFtBFg=="
+  "resolved" "https://registry.npmjs.org/fast-xml-parser/-/fast-xml-parser-3.21.1.tgz"
+  "version" "3.21.1"
+  dependencies:
+    "strnum" "^1.0.4"
+
 "figures@^3.0.0":
   "integrity" "sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg=="
   "resolved" "https://registry.npmjs.org/figures/-/figures-3.2.0.tgz"
@@ -1654,7 +1668,7 @@
   "resolved" "https://registry.npmjs.org/focus-group/-/focus-group-0.3.1.tgz"
   "version" "0.3.1"
 
-"follow-redirects@^1.14.8":
+"follow-redirects@^1.14.0", "follow-redirects@^1.14.8":
   "integrity" "sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.9.tgz"
   "version" "1.14.9"
@@ -3606,6 +3620,14 @@
     "hash-base" "^3.0.0"
     "inherits" "^2.0.1"
 
+"rss-to-json@^2.0.2":
+  "integrity" "sha512-tthD3OKROZWSC11AGJ/Qs8bjbHbnjkwC4n3EQSdvLJE3lf/b4AKEyg/ayyjv+1f+O/KF6oEmufEvyJFN0q622w=="
+  "resolved" "https://registry.npmjs.org/rss-to-json/-/rss-to-json-2.0.2.tgz"
+  "version" "2.0.2"
+  dependencies:
+    "axios" "^0.21.1"
+    "fast-xml-parser" "^3.19.0"
+
 "rxjs@^6.6.3":
   "integrity" "sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ=="
   "resolved" "https://registry.npmjs.org/rxjs/-/rxjs-6.6.7.tgz"
@@ -3934,6 +3956,11 @@
   "version" "6.0.1"
   dependencies:
     "ansi-regex" "^5.0.1"
+
+"strnum@^1.0.4":
+  "integrity" "sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA=="
+  "resolved" "https://registry.npmjs.org/strnum/-/strnum-1.0.5.tgz"
+  "version" "1.0.5"
 
 "styled-components@^5.2.1", "styled-components@>= 2":
   "integrity" "sha512-++4iHwBM7ZN+x6DtPPWkCI4vdtwumQ+inA/DdAsqYd4SVgUKJie5vXyzotA00ttcFdQkCng7zc6grwlfIfw+lw=="

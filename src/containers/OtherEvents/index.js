@@ -70,7 +70,7 @@ const OtherEvents = () => {
                         <LinkButton
                           target="_blank"
                           href={button.link}
-                          className="light"
+                          className="dark"
                           title={button.text}
                         />
                       </div>

@@ -22,7 +22,7 @@ const SectionWrapper = styled.section`
   }
 
   .swiper {
-    max-height: 100%;
+    height: auto !important;
   }
 
   .single-swipper {
@@ -30,9 +30,11 @@ const SectionWrapper = styled.section`
 
   .swiper-slide {
     height: auto !important;
+    min-height: 55rem !important;
   }
 
   .swiper-inner-wrapper {
+    box-sizing: border-box;
     // padding: 7.188rem 0;
     display: flex;
     box-sizing: border-box;
@@ -64,17 +66,22 @@ const SectionWrapper = styled.section`
     }
 
     .top-icon {
-      height: 2.5rem;
       margin-bottom: 2.813rem;
+      height: 3.125rem;
     }
 
     .bottom-icon {
       margin-top: 1.563rem;
+      height: 3.125rem;
     }
 
     a {
       width: 28.75rem;
     }
+  }
+
+  .swiper-slide:last-child .bottom-icon {
+    height: 5rem;
   }
 
   .swiper-pagination-bullet {

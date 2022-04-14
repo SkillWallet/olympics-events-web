@@ -1,10 +1,11 @@
 const express = require("express");
 require("dotenv").config({
-  path: `${__dirname}/../.env`
+  path: `${__dirname}/../.env`,
 });
 const app = express();
 const bodyParser = require("body-parser");
 const axios = require("axios");
+const { parse } = require("rss-to-json");
 app.use(bodyParser.json());
 port = process.env.SERVER_PORT;
 
@@ -12,16 +13,16 @@ app.get("/api/tweets", async function (req, res) {
   try {
     const params = {
       max_results: 100,
-      'tweet.fields': 'created_at',
-      expansions: 'attachments.media_keys,in_reply_to_user_id',
-      'media.fields': 'media_key,url',
+      "tweet.fields": "created_at",
+      expansions: "attachments.media_keys,in_reply_to_user_id",
+      "media.fields": "media_key,url",
     };
 
     const config = {
       headers: {
         Authorization: `Bearer ${process.env.TWITTER_TOKEN}`,
       },
-      params
+      params,
     };
     const result = await axios.get(
       "https://api.twitter.com/2/users/1382060860651278339/tweets",
@@ -29,26 +30,49 @@ app.get("/api/tweets", async function (req, res) {
     );
 
     const { data, includes } = result.data;
-    const tweets = data.filter((d) => !d.in_reply_to_user_id).map((d) => {
-      if (d.attachments && d.attachments.media_keys) {
-        const [key] = d.attachments.media_keys;
-        const mediaItem = includes && (includes.media || []).find((m) => m.media_key === key);
-        if (mediaItem) {
-          d = {
-            ...d,
-            image: mediaItem.url
+    const tweets = data
+      .filter((d) => !d.in_reply_to_user_id)
+      .map((d) => {
+        if (d.attachments && d.attachments.media_keys) {
+          const [key] = d.attachments.media_keys;
+          const mediaItem =
+            includes && (includes.media || []).find((m) => m.media_key === key);
+          if (mediaItem) {
+            d = {
+              ...d,
+              image: mediaItem.url,
+            };
           }
         }
-      }
-      return {
-        type: 'Tweet',
-        id: d.id,
-        text: d.text,
-        image: d.image,
-        created_at: d.created_at
-      };
-    });
+        return {
+          type: "Tweet",
+          id: d.id,
+          text: d.text,
+          image: d.image,
+          created_at: d.created_at,
+        };
+      });
     res.send(tweets);
+  } catch (error) {
+    console.log("tweets error", error);
+  }
+});
+
+app.get("/api/medium-posts", async function (req, res) {
+  try {
+    const response = await parse("https://blog.skillwallet.id/feed");
+    res.send(
+      response.items.map((v) => {
+        return {
+          type: "Medium Post",
+          title: v.title,
+          text: v.content.replace(/<img[^>]*>/g, "").replace(v.title, ""),
+          created_at: new Date(v.published).toDateString(),
+          image: v.thumbnail,
+          href: v.link,
+        };
+      })
+    );
   } catch (error) {
     console.log("tweets error", error);
   }

@@ -36,6 +36,10 @@ const About = () => {
         <Swiper
           className="single-swipper"
           slidesPerView={1}
+          preventInteractionOnTransition
+          preventClicksPropagation={false}
+          preventClicks={false}
+          allowTouchMove={false}
           pagination={pagination}
           modules={[Pagination]}
         >
