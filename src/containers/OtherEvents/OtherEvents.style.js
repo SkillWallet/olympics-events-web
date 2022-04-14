@@ -81,7 +81,7 @@ const SectionWrapper = styled.section`
   }
 
   .swiper-slide:last-child .bottom-icon {
-    height: 5rem;
+    height: 7rem;
   }
 
   .swiper-pagination-bullet {
