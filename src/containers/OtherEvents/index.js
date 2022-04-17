@@ -17,7 +17,7 @@ const { title, items } = OtherEventsData;
 
 const OtherEvents = () => {
   return (
-    <SectionWrapper id="service_section">
+    <SectionWrapper id="other_events">
       <Heading className="header" fontWeight="bold" content={title} />
 
       <Container className="Container">

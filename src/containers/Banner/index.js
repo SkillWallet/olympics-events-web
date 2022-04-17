@@ -11,7 +11,7 @@ const Banner = ({ row }) => {
   const { title, subtitle, text, logo, image } = BannerData;
   return (
     <>
-      <BannerArea id="main_section">
+      <BannerArea id="banner">
         <Container className="Container">
           <div className="main-logo">
             <Image alt="skillwallet" src={logo.src} />

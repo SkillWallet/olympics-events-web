@@ -24,7 +24,7 @@ const About = () => {
   };
 
   return (
-    <AboutArea id="banner_section">
+    <AboutArea id="olympics">
       <Image alt="3d-cube" className="cube-left-top" src={cubeImage.src} />
       <Image alt="3d-cube" className="cube-right-bottom" src={cubeImage.src} />
       <Container className="Container">
@@ -52,7 +52,12 @@ const About = () => {
                     <Text as="p" color="white" content={subtitle} />
                   </div>
                   <div onClick={(e) => e.stopPropagation()}>
-                    <LinkButton target="_blank" href={button.link} className="light" title={button.text} />
+                    <LinkButton
+                      target="_blank"
+                      href={button.link}
+                      className="light"
+                      title={button.text}
+                    />
                   </div>
                 </div>
               </SwiperSlide>

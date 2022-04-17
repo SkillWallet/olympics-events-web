@@ -103,7 +103,7 @@ const News = () => {
   };
 
   return (
-    <NewsArea id="banner_section">
+    <NewsArea id="news">
       <div className="header">
         <Heading
           className="header"

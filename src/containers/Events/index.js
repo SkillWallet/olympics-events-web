@@ -10,8 +10,13 @@ const { title, items } = EventsData;
 
 const Events = () => {
   return (
-    <SectionWrapper id="service_section">
-      <Heading className="header" fontWeight="bold" fontSize="3.5rem" content={title} />
+    <SectionWrapper id="events">
+      <Heading
+        className="header"
+        fontWeight="bold"
+        fontSize="3.5rem"
+        content={title}
+      />
       <CardSlider>
         {items.map((item, index) => (
           <EventWrapper key={index} style={{ width: "29.438rem" }}>

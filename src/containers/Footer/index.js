@@ -10,7 +10,7 @@ const Footer = () => {
   const { logo, social, copyright } = FooterData;
 
   return (
-    <FooterArea>
+    <FooterArea id="contact">
       <Container className="Container">
         <Left>
           <Logo className="logo" href="/" logoSrc={logo} title="Skillwallet" />

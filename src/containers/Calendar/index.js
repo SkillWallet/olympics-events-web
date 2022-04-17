@@ -2,15 +2,28 @@ import React from "react";
 import Container from "common/components/UI/Container";
 import CalendarArea from "./calendar.style";
 import { CalendarData } from "common/data";
-import Link from "next/link";
-import Image from "common/components/Image";
+import CustomCalendar from "common/components/Calendar";
+
+const calendar_configuration = {
+  api_key: "AIzaSyA13TZidErRpYRuet8rqXPRdxEX_dcM9gU",
+  calendars: [
+    {
+      name: "demo",
+      url: "srg23q1tm95o05u36lec0ilkt4@group.calendar.google.com",
+    },
+  ],
+  dailyRecurrence: 700,
+  weeklyRecurrence: 500,
+  monthlyRecurrence: 20,
+};
 
 const Calendar = ({ row }) => {
   const { months, link } = CalendarData;
   return (
     <>
-      <CalendarArea id="main_section">
+      <CalendarArea id="calendar">
         <Container className="Container">
+          {/* <CustomCalendar events={[]} config={calendar_configuration} /> */}
           <iframe
             src="https://calendar.google.com/calendar/embed?src=team%40skillwallet.id&ctz=America%2FNew_York"
             style={{ border: 0 }}
