@@ -52,7 +52,7 @@ export const AboutData = {
       },
     },
     {
-      title: "Become a Co-Host ",
+      title: "Become a Partner",
       subtitle:
         "Partners can co-host a competition, sponsor side-events, or join us as DAO partner, to add value & expertise from their Community.",
       button: {
@@ -264,7 +264,15 @@ export const CalendarData = {
         },
         {
           day: 22,
-          name: "DAOHACKS",
+          name: "ETHAmsterdam",
+        },
+        {
+          day: 23,
+          name: "ETHAmsterdam",
+        },
+        {
+          day: 24,
+          name: "ETHAmsterdam",
         },
       ],
     },
@@ -274,15 +282,15 @@ export const CalendarData = {
       events: [
         {
           day: 3,
-          name: "DAOHACKS",
+          name: "SpaghettETH",
         },
         {
           day: 4,
-          name: "DAOHACKS",
+          name: "SpaghettETH",
         },
         {
           day: 5,
-          name: "DAOHACKS",
+          name: "SpaghettETH",
         },
       ],
     },
