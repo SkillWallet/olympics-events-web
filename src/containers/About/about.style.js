@@ -19,17 +19,44 @@ const AboutArea = styled.section`
   .single-swipper {
     max-width: 80%;
     margin: 0 auto;
-    height: 20rem;
+    min-height: 20rem;
     border: 1px solid #fff;
     background: #393939;
+
+    @media only screen and (max-width: 667px) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .swiper-inner-wrapper {
     padding: 2.625rem;
     display: flex;
-    height: 20rem;
+    min-height: 20rem;
     box-sizing: border-box;
     align-items: center;
+
+    @media only screen and (max-width: 991px) {
+      flex-direction: column;
+      .right-side {
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .left-side {
+        p {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 667px) {
+      .right-side a {
+        width: 100%;
+      }
+    }
   }
 
   .swiper-pagination-bullet {
@@ -43,7 +70,7 @@ const AboutArea = styled.section`
     border: 2px solid #fff;
     background: #fff;
   }
-  
+
   .swiper-pagination-bullet-active {
     background: transparent;
   }
@@ -53,7 +80,7 @@ const AboutArea = styled.section`
     h2 {
       font-weight: bold;
       font-size: 3.563rem;
-      color: #87FFFF;
+      color: #87ffff;
       font-family: Raleway-Bold;
     }
 
@@ -63,7 +90,7 @@ const AboutArea = styled.section`
       letter-spacing: 0;
       font-style: italic;
       font: italic normal medium 1.688rem/2.25rem Raleway;
-     
+
       @media only screen and (max-width: 1600px) {
         margin-right: 6.25rem;
       }
@@ -74,6 +101,12 @@ const AboutArea = styled.section`
     position: absolute;
     top: 0;
     left: -100px;
+
+    @media only screen and (max-width: 667px) {
+      top: -22px;
+      left: -60px;
+      height: 184px;
+    }
   }
 
   .cube-right-bottom {
@@ -88,14 +121,14 @@ const AboutArea = styled.section`
       font-size: 6.25rem;
       font-family: Raleway-Bold;
     }
-  
+
     h3 {
       font-weight: bold;
       font-size: 2.5rem;
       margin-bottom: 5rem;
       font-family: Raleway-Bold;
     }
-  
+
     p {
       font-weight: normal;
       font-size: 1.688rem;
@@ -104,6 +137,13 @@ const AboutArea = styled.section`
       margin: 0 auto;
       margin-bottom: 6.25rem;
       font: normal normal 600 1.688rem/2.813rem Raleway;
+    }
+
+    .description {
+      @media only screen and (max-width: 667px) {
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 `;

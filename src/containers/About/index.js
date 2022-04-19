@@ -31,7 +31,7 @@ const About = () => {
         <div className="main-text">
           <Heading color="white" as="h2" content={title} />
           <Heading color="white" as="h3" content={subtitle} />
-          <Text as="p" color="white" content={text} />
+          <Text className="description" as="p" color="white" content={text} />
         </div>
         <Swiper
           className="single-swipper"
@@ -51,7 +51,10 @@ const About = () => {
                     <Heading as="h2" content={title} />
                     <Text as="p" color="white" content={subtitle} />
                   </div>
-                  <div onClick={(e) => e.stopPropagation()}>
+                  <div
+                    className="right-side"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <LinkButton
                       target="_blank"
                       href={button.link}
