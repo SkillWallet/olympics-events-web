@@ -21,7 +21,7 @@ export const BannerData = {
   logo: LogoImageStick,
   title: "Identity Spring",
   subtitle: "SkillWallet-powered Events.",
-  text: "SkillWallet was designed to fuel a more meritocratic society, based on the Individuals, their Skills, and their participation in a Community. Join our Identity Spring, in a series of 15 events, with 400+k in rewards, going from regular Hackathons to Build-athons, and the first, fully decentralized Olympics of the free, non-governmental world.",
+  text: "SkillWallet was designed to fuel a more meritocratic society, based on the Individuals, their Skills, and their participation in a Community. Join our Identity Season, in a series of 15 events, with 400+k in rewards, going from regular Hackathons to Build-athons, and the first, fully decentralized Olympics of the free, non-governmental world.",
 };
 
 import cubeImage from "common/assets/image/cube.svg";
@@ -217,7 +217,7 @@ export const OtherEventsData = {
       bottomIcon: spaghettSponson,
       title: "03-05/05/22",
       subtitle: "SkillWallet @ SpaghettETH",
-      description: `Join us at ETHAmsterdam for the opportunity to explore new technologies, win incredible prizes,and hack for Public Goods & Personal Freedom.* Meet us in Milan at our booth to join our side-events!`,
+      description: `Join us in Milan @ SpaghettETH for the opportunity to explore new technologies, win incredible prizes,and hack for Public Goods & Personal Freedom.* Meet us in Milan at our booth to join our side-events!`,
       button: {
         link: "http://spaghett-eth.com/",
         text: "Find Out More",
